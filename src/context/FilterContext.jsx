@@ -15,16 +15,3 @@ export function FilterProvider({ children }) {
         </FilterContext.Provider>
     );
 }
-export function FilterProvider({ children }) {
-    const [filter, setFilter] = useState('');
-
-    const updateFilter = (newFilter) => {
-        setFilter(newFilter);
-    };
-
-    return (
-        <FilterContext.Provider value={{ filter, updateFilter }}>
-            {children}
-        </FilterContext.Provider>
-    );
-}
