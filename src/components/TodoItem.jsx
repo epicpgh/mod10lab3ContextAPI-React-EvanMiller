@@ -11,6 +11,8 @@ export function TodoItem({ todo }) {
     setIsEditing(false);
   };
 
+  console.log('todo', todo);
+
   return (
     <li className="flex items-center justify-between gap-4 border-b py-2">
       <div className="flex items-center gap-3">

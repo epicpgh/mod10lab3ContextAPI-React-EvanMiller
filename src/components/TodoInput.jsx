@@ -5,17 +5,18 @@ export function TodoInput() {
   const [todoText, setTodoText] = useState("");
   const { addTodo } = useTodos();
 
+
+
+
+  
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (todoText.trim()) {
-      addTodo({
-        id: Date.now().toString(),
-        text: todoText.trim(),
-        completed: false,
-      });
-      setTodoText("");
-    }
-  };
+  e.preventDefault();
+  if (todoText.trim()) {
+    addTodo(todoText.trim()); 
+    setTodoText("");
+  }
+};
 
   return (
     <div className="my-4">

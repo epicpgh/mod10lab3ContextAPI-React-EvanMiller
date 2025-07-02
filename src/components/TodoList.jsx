@@ -1,9 +1,7 @@
 
-
 import { useTodos } from "../context/ToDoContext"; // adjust path if needed
-import { useFilter } from "../context/FilterContext"
-import TodoItem from "./TodoItem"
-
+import { useFilter } from "../context/FilterContext";
+import TodoItem from "./TodoItem";
 
 export function TodoList() {
   const { todos } = useTodos();
@@ -16,17 +14,12 @@ export function TodoList() {
   });
 
   return (
-
     <ul>
-        
-
-        {todos && todos.map(todo => (
-         <TodoItem key={todo.id} todo={todo}
-         />   
-        ))}
+      {filteredTodos.map((todo) => (
+        <TodoItem key={todo.id} todo={todo} />
+      ))}
     </ul>
-)
-
+  );
 }
 
-export default TodoList
+export default TodoList;

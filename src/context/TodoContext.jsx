@@ -5,6 +5,8 @@ const TodoContext = createContext();
 export const useTodos = () => useContext(TodoContext);
 
 export function TodoProvider({ children }) {
+
+
   const [todos, setTodos] = useState(() => {
     const stored = localStorage.getItem("todos");
     return stored ? JSON.parse(stored) : [];
