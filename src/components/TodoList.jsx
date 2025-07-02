@@ -1,6 +1,6 @@
 
 
-import { useTodos } from "../context/TodoContext"; // adjust path if needed
+import { useTodos } from "../context/ToDoContext"; // adjust path if needed
 import { useFilter } from "../context/FilterContext"
 import TodoItem from "./TodoItem"
 

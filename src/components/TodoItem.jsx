@@ -1,4 +1,4 @@
-import { useTodos } from "../context/TodoContext"; // adjust path if needed
+import { useTodos } from "../context/ToDoContext"; // adjust path if needed
 import { useState } from "react";
 
 export function TodoItem({ todo }) {

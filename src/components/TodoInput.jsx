@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTodos } from "../context/TodoContext"; // adjust path if needed
+import { useTodos } from "../context/ToDoContext"; 
 
 export function TodoInput() {
   const [todoText, setTodoText] = useState("");
